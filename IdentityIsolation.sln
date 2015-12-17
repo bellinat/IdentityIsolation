@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{4FA8228A-D5BD-4AA0-A613-B57F506684A7}"
 EndProject
@@ -22,6 +22,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EP.IdentityIsolation.Domain", "src\EP.IdentityIsolation.Domain\EP.IdentityIsolation.Domain.csproj", "{659259FE-26B5-4868-935C-B4A08BCDD924}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EP.IdentityIsolation.Infra.Data", "src\EP.IdentityIsolation.Infra.Data\EP.IdentityIsolation.Infra.Data.csproj", "{7452498E-395C-4BEC-87AF-1B2B3AA8BD10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EP.IdentityIsolation.API", "src\EP.IdentityIsolation.API\EP.IdentityIsolation.API.csproj", "{F44BBF8F-2C34-4C92-8AE1-4F0EB507BDEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{7452498E-395C-4BEC-87AF-1B2B3AA8BD10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7452498E-395C-4BEC-87AF-1B2B3AA8BD10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7452498E-395C-4BEC-87AF-1B2B3AA8BD10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F44BBF8F-2C34-4C92-8AE1-4F0EB507BDEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F44BBF8F-2C34-4C92-8AE1-4F0EB507BDEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F44BBF8F-2C34-4C92-8AE1-4F0EB507BDEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F44BBF8F-2C34-4C92-8AE1-4F0EB507BDEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,5 +67,6 @@ Global
 		{73AAEC7C-9DF5-457A-8096-E2B915B4FAF2} = {4FA8228A-D5BD-4AA0-A613-B57F506684A7}
 		{659259FE-26B5-4868-935C-B4A08BCDD924} = {499A6D70-99FE-418E-BCBB-D9B260C3E642}
 		{7452498E-395C-4BEC-87AF-1B2B3AA8BD10} = {A7D2FB6D-E397-4846-8E93-715AA638AE6F}
+		{F44BBF8F-2C34-4C92-8AE1-4F0EB507BDEA} = {4FA8228A-D5BD-4AA0-A613-B57F506684A7}
 	EndGlobalSection
 EndGlobal
