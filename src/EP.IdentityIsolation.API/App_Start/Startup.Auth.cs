@@ -9,7 +9,6 @@ using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
 using EP.IdentityIsolation.API.Providers;
-using EP.IdentityIsolation.API.Models;
 
 namespace EP.IdentityIsolation.API
 {
@@ -23,8 +22,9 @@ namespace EP.IdentityIsolation.API
         public void ConfigureAuth(IAppBuilder app)
         {
             // Configure the db context and user manager to use a single instance per request
-            app.CreatePerOwinContext(ApplicationDbContext.Create);
-            app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
+            //app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
+            //app.CreatePerOwinContext(()=> GlobalConfiguration.Configuration.DependencyResolver
+            //app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager);
 
             // Enable the application to use a cookie to store information for the signed in user
             // and to use a cookie to temporarily store information about a user logging in with a third party login provider

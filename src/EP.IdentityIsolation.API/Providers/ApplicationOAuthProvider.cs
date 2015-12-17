@@ -9,7 +9,8 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using EP.IdentityIsolation.API.Models;
+using EP.IdentityIsolation.Infra.CrossCutting.Identity.Configuration;
+using EP.IdentityIsolation.Infra.CrossCutting.Identity.Model;
 
 namespace EP.IdentityIsolation.API.Providers
 {
