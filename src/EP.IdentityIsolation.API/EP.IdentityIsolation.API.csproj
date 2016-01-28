@@ -265,7 +265,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -294,6 +296,10 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EP.IdentityIsolation.Domain\EP.IdentityIsolation.Domain.csproj">
+      <Project>{659259fe-26b5-4868-935c-b4a08bcdd924}</Project>
+      <Name>EP.IdentityIsolation.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EP.IdentityIsolation.Infra.CrossCutting.Identity\EP.IdentityIsolation.Infra.CrossCutting.Identity.csproj">
       <Project>{9062b1c5-f32d-435e-93b2-2e7f6268b2a1}</Project>
       <Name>EP.IdentityIsolation.Infra.CrossCutting.Identity</Name>

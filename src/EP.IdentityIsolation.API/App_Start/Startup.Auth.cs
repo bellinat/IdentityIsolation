@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin;
@@ -9,6 +10,7 @@ using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
 using EP.IdentityIsolation.API.Providers;
+using EP.IdentityIsolation.Infra.CrossCutting.Identity.Configuration;
 
 namespace EP.IdentityIsolation.API
 {
@@ -22,9 +24,8 @@ namespace EP.IdentityIsolation.API
         public void ConfigureAuth(IAppBuilder app)
         {
             // Configure the db context and user manager to use a single instance per request
-            //app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
-            //app.CreatePerOwinContext(()=> GlobalConfiguration.Configuration.DependencyResolver
-            //app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager);
+            //app.CreatePerOwinContext(() => DependencyResolver.Current.GetService<ApplicationUserManager>());
+            //app.CreatePerOwinContext(() => DependencyResolver.Current.GetService<ApplicationSignInManager>());
 
             // Enable the application to use a cookie to store information for the signed in user
             // and to use a cookie to temporarily store information about a user logging in with a third party login provider

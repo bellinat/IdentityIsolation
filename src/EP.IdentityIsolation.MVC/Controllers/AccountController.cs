@@ -21,8 +21,7 @@ namespace EP.IdentityIsolation.MVC.Controllers
             _userManager = userManager;
             _signInManager = signInManager;
         }
-
-
+        
         //
         // GET: /Account/Login
         [AllowAnonymous]
